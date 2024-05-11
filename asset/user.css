@@ -1,0 +1,57 @@
+body {
+	display: grid;
+	place-items: center;
+	background-image: url(neko.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+h1 {
+	color: white;
+}
+h2 {
+	color: white;
+}
+h3 {
+	color: white;
+}
+h4 {
+	color: white;
+}
+h5 {
+	color: white;
+}
+p {
+	color: white;
+}
+
+.box {
+	padding: 0px;
+	background-color: black;
+	opacity: 0.7;
+	border: 2px solid #800000;
+	padding: 10px;
+}
+
+.addT {
+	display: grid;
+	place-items: center;
+	grid-template-columns: auto auto;
+	margin-top: auto;
+}
+
+.user {
+	place-items: center;
+	max-height: cover;
+	margin: 20px;
+}
+
+.user_log {
+	font-size: 50px;
+}
