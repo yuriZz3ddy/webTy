@@ -1,7 +1,7 @@
 body {
 	display: grid;
 	place-items: center;
-	background-image: url(neko.png);
+	background-image: url(errDark.gif);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
