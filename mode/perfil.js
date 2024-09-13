@@ -14,7 +14,7 @@ fetch("https://japi.rest/discord/v1/user/933891035216613446", {
 	var name = a.username
 	var ids = a.id
 	var avatar = a.avatar
-	var size = ".png?size=1024";
+	var size = ".png?size=128";
 	var addUrl = "https://cdn.discordapp.com/avatars/";
 	
 	var avatar_url = addUrl + ids + "/" + avatar + size
