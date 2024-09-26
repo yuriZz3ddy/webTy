@@ -14,10 +14,14 @@ fetch("https://japi.rest/discord/v1/user/933891035216613446", {
 	var name = a.username
 	var ids = a.id
 	var avatar = a.avatar
-	var size = ".png?size=128";
-	var addUrl = "https://cdn.discordapp.com/avatars/";
+	let addUrl;
+	if(avatar) {
+	addUrl = getMediaUrl() + getAvatar(avatar, ids, 0, 128)
+	} else {
+	addUrl = getCdnUrl() + getAvatar(avatar, ids, 0, 128)
+	}
 	
-	var avatar_url = addUrl + ids + "/" + avatar + size
+	var avatar_url = addUrl
 	console.log(avatar_url)
 	main(username, name)
 	imageAdd = document.getElementById("imgAdd")
