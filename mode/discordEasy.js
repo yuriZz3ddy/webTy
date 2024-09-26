@@ -16,6 +16,16 @@ function getAvatarNone(boolAvatar) {
   return _avatarError;
 }
 
+function getBannerNone(boolBanner) {
+  let _bannerError;
+  if (boolBanner) {
+    _bannerError = true;
+  } else {
+    _bannerError = false;
+  }
+  return _bannerError;
+}
+
 function getIconNone(boolIcon) {
   let _iconError;
   if (boolIcon) {
@@ -88,4 +98,4 @@ function getIcon(strIcon, guildId, size) {
     _strG = "icons/" + guildId + "/" + strIcon + _format + _size
   }
   return _strG;
-}
+  }
